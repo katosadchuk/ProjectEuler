@@ -29,4 +29,4 @@ public class LargestPrimeFactor {
 		System.out.println(largestPrime(99));
 		System.out.println(largestPrime(8));
 	}
-}
+};

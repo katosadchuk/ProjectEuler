@@ -4,10 +4,10 @@ import java.util.Stack;
 
 public class MultiplesThreeFive {
 
-	public static void main(String args[]){
+	public static int sumMult(int below){
 		Stack<Integer> stack = new Stack<Integer>();
 		int sum = 0;
-		for(int i = 1; i < 1000000; i++){
+		for(int i = 1; i < below; i++){
 			if(i%3 == 0 || i%5 == 0){
 				stack.push(i);
 			}
@@ -15,10 +15,13 @@ public class MultiplesThreeFive {
 		while(!stack.isEmpty()){
 			sum = sum + stack.pop();
 		}
-		System.out.println(sum);
+		return sum;
+	}
+
+	public static void main(String args[]){
+		System.out.println(sumMult(10));
 		
 		
-		//int x = 12;
-		//System.out.println("Hi" + x);
+		
 	}
 }
